@@ -1,16 +1,21 @@
+
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
 body {
     height: 100vh;
     background: linear-gradient(150deg, #F5DF99, #7C3E66);
+    overflow: hidden;
 }
 
 .topic {
     padding-left: 400px;
 }
+
 .upper {
     background-color: #9BA3EB;
     justify-content: center;
@@ -21,11 +26,12 @@ body {
     padding-right: 20px;
     padding-top: 10px;
     border: 3px solid rgb(245, 197, 197);
+    align-items: center;
 
 }
 
 
-h1{
+h1 {
     align-items: center;
     justify-content: center;
     display: flex;
@@ -35,15 +41,16 @@ h1{
 
 }
 
-.inputel{
+.inputel {
     align-items: center;
     justify-content: center;
-    display: flex; 
+    display: flex;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: 40px;
     margin-right: 40px;
 }
+
 #input {
     height: 50px;
     font-size: 18px;
@@ -64,6 +71,7 @@ h1{
     cursor: pointer;
     color: rgb(8, 0, 0);
 }
+
 #btn:hover {
     color: rgb(240, 46, 46);
     background-color: rgb(0, 8, 6);
@@ -95,7 +103,7 @@ h1{
     font-weight: 360;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-} 
+}
 
 .del {
     justify-content: center;
@@ -110,7 +118,8 @@ h1{
     align-items: center;
     text-align: center;
 }
-.del:hover{
+
+.del:hover {
     color: rgb(240, 46, 46);
     background-color: rgb(0, 8, 6);
 }
@@ -119,3 +128,47 @@ h1{
     text-decoration: line-through;
 }
 
+@media screen and (max-width: 768px) {
+    body {
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        background: #F5DF99;
+    }
+    .topic{
+        padding-left: 0;
+
+    }
+    .upper {
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        margin-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        border: 1px solid rgb(245, 197, 197);
+    
+  }
+  h1 {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 25px;
+        font-weight: bold;
+  }
+  .upper {
+    background-color: #9BA3EB;
+    justify-content: center;
+    height: 150px;
+    width: 310px;
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    border: 3px solid rgb(245, 197, 197);
+    align-items: center;
+    margin-left: 25px;
+
+}
+}
